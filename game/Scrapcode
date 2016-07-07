@@ -1,0 +1,6 @@
+init:
+    $ hope1 = False
+    $ hope2 = False
+    $ hope3 = False
+    $ hope4 = False
+    $ hope5 = False

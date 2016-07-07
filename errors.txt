@@ -1,0 +1,15 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/Gallery.rpy", line 1: invalid syntax
+    image cg1 = "cg1.jpg"
+             ^
+    
+
+File "game/Gallery.rpy", line 2: invalid syntax
+    image cg2 = "cg2.jpg"
+             ^
+    
+
+Ren'Py Version: Ren'Py 6.99.10.1227
