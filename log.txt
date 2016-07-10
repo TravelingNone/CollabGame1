@@ -493,4 +493,9 @@ Traceback (most recent call last):
   File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\text.py", line 575, in __init__
     glyphs = ts.glyphs(s, self)
   File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\text.py", line 239, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertic
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\font.py", line 646, in get_font
+    face = load_face(fn)
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\font.py", line 589, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'NEWTOW_.ttf'.
