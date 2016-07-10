@@ -85,7 +85,7 @@ init -1 python hide:
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
-    style.default.font = "NEWTOW__.ttf"
+
     # style.window.left_margin = 6
     # style.window.right_margin = 6
     # style.window.top_margin = 6
