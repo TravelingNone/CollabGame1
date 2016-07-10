@@ -2,14 +2,6 @@
 errors listed below, and try again.
 
 
-File "game/Gallery.rpy", line 1: invalid syntax
-    image cg1 = "cg1.jpg"
-             ^
-    
-
-File "game/Gallery.rpy", line 2: invalid syntax
-    image cg2 = "cg2.jpg"
-             ^
-    
+File "game/options.rpy", line 65: keyword can't be an expression
 
 Ren'Py Version: Ren'Py 6.99.10.1227
