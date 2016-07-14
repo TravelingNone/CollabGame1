@@ -1,3 +1,5 @@
+.git/ matches **/.** (None).
+.gitattributes matches **/.** (None).
 errors.txt matches errors.txt (None).
 game/ matches ** ([u'all']).
 game/Always Together.otf matches ** ([u'all']).
@@ -53,6 +55,14 @@ game/images/menuHover26.jpg matches ** ([u'all']).
 game/images/menuIdle.jpg matches ** ([u'all']).
 game/images/NewGame_Hover.png matches ** ([u'all']).
 game/images/NewGame_Idle.png matches ** ([u'all']).
+game/images/NEWTOWBI.TTF matches ** ([u'all']).
+game/images/NEWTOWBI.TXT matches ** ([u'all']).
+game/images/NEWTOW_B.TTF matches ** ([u'all']).
+game/images/NEWTOW_B.TXT matches ** ([u'all']).
+game/images/NEWTOW_I.TTF matches ** ([u'all']).
+game/images/NEWTOW_I.TXT matches ** ([u'all']).
+game/images/NEWTOW__.TTF matches ** ([u'all']).
+game/images/NEWTOW__.TXT matches ** ([u'all']).
 game/images/Preferences_Hover.png matches ** ([u'all']).
 game/images/Preferences_Idle.png matches ** ([u'all']).
 game/images/Quit_Hover.png matches ** ([u'all']).
@@ -81,26 +91,8 @@ log.txt matches log.txt (None).
 README.html matches ** ([u'all']).
 tmp/ matches tmp/ (None).
 traceback.txt matches traceback.txt (None).
-02.06.14-tutorial Renpy Framework/ doesn't match anything.
-02.06.14-tutorial Renpy Framework/ matches None (None).
-02.09.14-quick-start Renpy Framework/ doesn't match anything.
-02.09.14-quick-start Renpy Framework/ matches None (None).
 doc/ doesn't match anything.
 doc/ matches None (None).
-DogDog/ doesn't match anything.
-DogDog/ matches None (None).
-DogDog - Experimental/ doesn't match anything.
-DogDog - Experimental/ matches None (None).
-DogDog-1.0-dists/ doesn't match anything.
-DogDog-1.0-dists/ matches None (None).
-dse-3.1/ doesn't match anything.
-dse-3.1/ matches None (None).
-editra/ doesn't match anything.
-editra/ matches None (None).
-files.txt doesn't match anything.
-files.txt matches None (None).
-Gallery/ doesn't match anything.
-Gallery/ matches None (None).
 launcher/ doesn't match anything.
 launcher/ matches None (None).
 lib/ matches /lib/** ([u'windows', u'linux', u'mac']).
@@ -1388,20 +1380,14 @@ renpy/warp.py matches renpy/** ([u'renpy']).
 renpy/warp.pyo matches renpy/** ([u'renpy']).
 renpy/__init__.py matches renpy/** ([u'renpy']).
 renpy/__init__.pyo matches renpy/** ([u'renpy']).
-Renpy Imagebuttons GUI sample/ doesn't match anything.
-Renpy Imagebuttons GUI sample/ matches None (None).
 renpy.app/ doesn't match anything.
 renpy.app/ matches None (None).
 renpy.exe doesn't match anything.
 renpy.exe matches None (None).
 renpy.py matches renpy.py ([u'renpy']).
 renpy.sh matches renpy.sh ([u'linux', u'mac']).
-sfdfsf/ doesn't match anything.
-sfdfsf/ matches None (None).
 templates/ doesn't match anything.
 templates/ matches None (None).
-Test/ doesn't match anything.
-Test/ matches None (None).
 the_question/ doesn't match anything.
 the_question/ matches None (None).
 tutorial/ doesn't match anything.
