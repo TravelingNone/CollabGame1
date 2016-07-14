@@ -64,8 +64,8 @@ init -1 python hide:
         gm_root = "#e4dffa",
         ## The fonts used by this theme. The default fonts may not be
         ## suitable for non-English languages.
-        regular_font = "_theme_awt/NEWTOW_.ttf",
-        bold_font = "_theme_awt/NEWTOW_B.ttf",
+        regular_font = "_theme_awt/NEWTOW_.TTF",
+        bold_font = "_theme_awt/NEWTOW_B.TTF",
 
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
