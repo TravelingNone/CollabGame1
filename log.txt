@@ -1,20 +1,34 @@
+<<<<<<< HEAD
 Sat Jul 09 21:32:02 2016
 Windows-8-6.2.9200
+=======
+Sat Jul 09 22:38:36 2016
+Windows-7-6.1.7601-SP1
+>>>>>>> 279d4edcf7e7c133ff58d990d507f60adf12f365
 Ren'Py 6.99.10.1227
  
 
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.01s
 Loader init took 0.01s
+<<<<<<< HEAD
 Loading error handling took 0.02s
 Loading script took 0.05s
+=======
+Loading error handling took 0.01s
+Loading script took 0.03s
+>>>>>>> 279d4edcf7e7c133ff58d990d507f60adf12f365
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.08s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
+<<<<<<< HEAD
 Dump and make backups. took 0.04s
+=======
+Dump and make backups. took 0.03s
+>>>>>>> 279d4edcf7e7c133ff58d990d507f60adf12f365
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
@@ -25,7 +39,11 @@ Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
+<<<<<<< HEAD
 Prepare screens took 0.05s
+=======
+Prepare screens took 0.04s
+>>>>>>> 279d4edcf7e7c133ff58d990d507f60adf12f365
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -413,6 +431,7 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
+<<<<<<< HEAD
 Total time until interface ready: 1.05399990082s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
@@ -499,3 +518,13 @@ Traceback (most recent call last):
   File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\font.py", line 589, in load_face
     raise Exception("Could not find font {0!r}.".format(orig_fn))
 Exception: Could not find font 'NEWTOW_.ttf'.
+=======
+Total time until interface ready: 0.52999997139s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.064000 seconds.
+- Frame drawn at 0.068000 seconds.
+- Frame drawn at 0.074000 seconds.
+- Frame drawn at 0.091000 seconds.
+- 0.091000 seconds to render 5 frames.
+>>>>>>> 279d4edcf7e7c133ff58d990d507f60adf12f365

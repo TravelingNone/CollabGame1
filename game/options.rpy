@@ -130,7 +130,7 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    style.default.font = "NEWTOW_.ttf"
+    style.default.font = "NEWTOW_.TTF"
 
     ## The default size of text.
 
