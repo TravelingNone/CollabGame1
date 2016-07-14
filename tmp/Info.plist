@@ -32,7 +32,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>DogDog-1.0</string>
 	<key>CFBundleVersion</key>
+<<<<<<< HEAD
 	<string>1.0.1468512020</string>
+=======
+	<string>1.0.1468187837</string>
+>>>>>>> d297a1882080953387ab8f307a6121d791c88760
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.simulation-games</string>
 	<key>NSSupportsAutomaticGraphicsSwitching</key>

@@ -68,14 +68,6 @@ game/images/Preferences_Idle.png matches ** ([u'all']).
 game/images/Quit_Hover.png matches ** ([u'all']).
 game/images/Quit_Idle.png matches ** ([u'all']).
 game/images/vbox.png matches ** ([u'all']).
-game/NEWTOWBI.TTF matches ** ([u'all']).
-game/NEWTOWBI.TXT matches ** ([u'all']).
-game/NEWTOW_B.TTF matches ** ([u'all']).
-game/NEWTOW_B.TXT matches ** ([u'all']).
-game/NEWTOW_I.TTF matches ** ([u'all']).
-game/NEWTOW_I.TXT matches ** ([u'all']).
-game/NEWTOW__.TTF matches ** ([u'all']).
-game/NEWTOW__.TXT matches ** ([u'all']).
 game/options.rpy matches ** ([u'all']).
 game/options.rpy.bak matches **.bak (None).
 game/options.rpyc matches ** ([u'all']).
@@ -93,6 +85,23 @@ tmp/ matches tmp/ (None).
 traceback.txt matches traceback.txt (None).
 doc/ doesn't match anything.
 doc/ matches None (None).
+<<<<<<< HEAD
+=======
+DogDog/ doesn't match anything.
+DogDog/ matches None (None).
+DogDog - Copy/ doesn't match anything.
+DogDog - Copy/ matches None (None).
+DogDog-1.0-dists/ doesn't match anything.
+DogDog-1.0-dists/ matches None (None).
+dse-3.1/ doesn't match anything.
+dse-3.1/ matches None (None).
+editra/ doesn't match anything.
+editra/ matches None (None).
+files.txt doesn't match anything.
+files.txt matches None (None).
+Gallery/ doesn't match anything.
+Gallery/ matches None (None).
+>>>>>>> d297a1882080953387ab8f307a6121d791c88760
 launcher/ doesn't match anything.
 launcher/ matches None (None).
 lib/ matches /lib/** ([u'windows', u'linux', u'mac']).
