@@ -2,6 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 65: keyword can't be an expression
+File "game/screens.rpy", line 674: python block expects a non-empty block.
+    python:
+           ^
 
 Ren'Py Version: Ren'Py 6.99.10.1227

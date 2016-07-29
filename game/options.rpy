@@ -66,7 +66,9 @@ init -1 python hide:
         ## suitable for non-English languages.
         regular_font = "_theme_awt/NEWTOW_.TTF",
         bold_font = "_theme_awt/NEWTOW_B.TTF",
-
+        #regular_font = "NEWTOW.TTF",
+        #bold_font = "NEWTOWB.TTF",
+        
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
         ## do so below.
@@ -130,7 +132,8 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    style.default.font = "NEWTOW_.TTF"
+    #style.default.font = "NEWTOW_.TTF"
+    style.default.font = "NEWTOW.TTF"
 
     ## The default size of text.
 
