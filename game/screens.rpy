@@ -237,6 +237,11 @@ screen main_menu():
             hovered SetVariable("hope", True)
             unhovered SetVariable ("hope", False)
             action Quit(confirm=False)
+        textbutton "Branching Paths (WIP)":
+            ## added by bendzz
+            hovered SetVariable("hope", True)
+            unhovered SetVariable ("hope", False)
+            action ShowMenu('BranchingPaths')
         
 init -2:
     # Make all the main menu buttons be the same size.
@@ -658,3 +663,74 @@ screen cg_gallery:
             vbox:
                 if len(gallery_cg_items)>gal_cells:
                     textbutton _("Next Page") action [SetVariable('cg_page', next_cg_page), ShowMenu("cg_gallery")]
+                    
+                    
+screen BranchingPaths():
+    ## Work in progress code by bendzz
+    ## The idea is to display all the 'labels' or 'nodes' in the game. If spoilers are set to off, then unfound labels are left as empty lines
+    tag menu
+    use navigation
+
+    #side "c b r":
+    #    area (10, 10, 800, 800)
+    #    viewport id "vp":
+    #        mousewheel True
+    #        scrollbars "vertical"
+    #        text "test text goes here"
+
+        #bar value XScrollValue("vp")
+        #vbar value YScrollValue("vp")
+        
+        
+    python:
+        
+        #testText = renpy.get_all_labels()   #Only returns label names, no other data
+        #renpy.seen_label(label)
+        
+        #scriptFile = open('script.rpy')
+        
+        #ui.text("Hello, World", size=40, xalign=0.5)
+        # Stats Window
+        #ui.frame(xpos=0,
+        #         ypos=0,
+        #         xanchor='left',
+        #         yanchor='top',
+        #         xfill=True,
+        #         )
+        
+
+        
+        
+        ui.vbox()
+
+        #ui.text('Statistics')
+        #ui.null(height=20)
+
+        #for name, range, value in stats:
+        #ui.hbox()
+        #ui.text(name, minwidth=150)
+        #ui.bar(range, value, ypos=0.5, yanchor='center')
+        #ui.close() # for the ui.hbox
+        #ui.text("test", minwidth=150)
+        
+        #ui.text("test", style = Style(style.viewport))
+        
+        #for item in testText:
+        #    ui.text("TEST " + type(item).__name__  + " \n", minwidth=150)
+        
+        
+        scriptFile = renpy.file('script.rpy').read().decode("utf-8")
+        scriptFile = scriptFile.split("\n")
+        
+        foundStart = False
+        for line in scriptFile:
+            if "label start:" in line:
+                foundStart = True
+                
+            if foundStart:
+                if "label" in line:
+                    ui.text(line, minwidth=150)
+
+        #ui.close() # for the ui.vbox
+    
+    

@@ -1,90 +1,50 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 115, in script
-    "Behold all the beautiful exposition."
-Exception: Could not find font 'NEWTOW_.TTF'.
+  File "game/screens.rpy", line 668, in execute
+    screen BranchingPaths():
+  File "game/screens.rpy", line 668, in execute
+    screen BranchingPaths():
+  File "game/screens.rpy", line 685, in execute
+    python:
+  File "game/screens.rpy", line 725, in <module>
+    foundStart = false
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 115, in script
-    "Behold all the beautiful exposition."
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\ast.py", line 604, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\exports.py", line 1122, in say
-    who(what, interact=interact)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\character.py", line 841, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\character.py", line 690, in do_display
-    **display_args)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\character.py", line 493, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
+    $ ui.interact()
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\ast.py", line 806, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\python.py", line 1577, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
+    $ ui.interact()
   File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\ui.py", line 277, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 2425, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 2779, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 1848, in draw_screen
-    renpy.config.screen_height,
-  File "renpy/display/render.pyx", line 416, in renpy.display.render.render_screen (gen\renpy.display.render.c:6685)
-    rv = render(root, width, height, 0, 0)
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\layout.py", line 649, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\layout.py", line 649, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\layout.py", line 649, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\screen.py", line 610, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\layout.py", line 649, in render
-    surf = render(child, width, height, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\layout.py", line 1023, in render
-    st, at)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\layout.py", line 839, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen\renpy.display.render.c:3319)
-    cpdef render(d, object widtho, object heighto, double st, double at):
-  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen\renpy.display.render.c:2857)
-    rv = d.render(widtho, heighto, st, at)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\text.py", line 1705, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\text.py", line 575, in __init__
-    glyphs = ts.glyphs(s, self)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\text.py", line 239, in glyphs
-    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\font.py", line 646, in get_font
-    face = load_face(fn)
-  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\text\font.py", line 589, in load_face
-    raise Exception("Could not find font {0!r}.".format(orig_fn))
-Exception: Could not find font 'NEWTOW_.TTF'.
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 2437, in interact
+    scene_lists.replace_transient()
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 727, in replace_transient
+    self.remove(layer, tag)
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 1014, in remove
+    self.hide_or_replace(layer, remove_index, "hide")
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\core.py", line 938, in hide_or_replace
+    d = oldsle.displayable._hide(now - st, now - at, prefix)
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\screen.py", line 430, in _hide
+    self.update()
+  File "E:\Users\mike\Dropbox\Documents\Other Docs\workin\2016 Eric Stray Game\renpy-6.99.10-sdk\renpy\display\screen.py", line 565, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 668, in execute
+    screen BranchingPaths():
+  File "game/screens.rpy", line 668, in execute
+    screen BranchingPaths():
+  File "game/screens.rpy", line 685, in execute
+    python:
+  File "game/screens.rpy", line 725, in <module>
+    foundStart = false
+NameError: name 'false' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227
